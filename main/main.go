@@ -10,7 +10,7 @@ func main() {
 	//  打开DB
 	db, err := badger.Open(badger.DefaultOptions("                                             /tmp/badger"))
 	defer db.Close()
-	//test111
+	//v1 test
 	// 读写事务
 	err = db.Update(func(txn *badger.Txn) error {
 		// Your code here…
