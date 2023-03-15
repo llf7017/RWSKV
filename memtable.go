@@ -274,7 +274,7 @@ func (mt *memTable) replayFunction(opt Options) func(Entry, valuePointer) error 
 type logFile struct {
 	*z.MmapFile
 	path string
-	// This is a lock on the log file. It guards the fd’s value, the file’s
+	// This is a lock on the lo·g file. It guards the fd’s value, the file’s
 	// existence and the file’s memory map.
 	//
 	// Use shared ownership when reading/writing the file or memory map, use
